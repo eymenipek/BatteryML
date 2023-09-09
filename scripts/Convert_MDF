@@ -1,0 +1,14 @@
+"""
+Created on Sat Sept 24 11:43:53 2023
+
+@author: eymenipek
+"""
+from asammdf import MDF
+
+def ConvertData(File, Name=None):
+    
+    df = MDF(File).to_dataframe()
+
+    df.Name=Name
+    print("Converting: " + df.Name)
+    return d
